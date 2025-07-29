@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Advice - PathStarter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h2>PathStarter</h2>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="jobs.html" class="nav-link">Find Jobs</a>
+                <a href="companies.html" class="nav-link">Company Reviews</a>
+                <a href="employer-post-job.html" class="nav-link">Post a Job</a>
+                <a href="login.html" class="nav-link login-btn">Sign In</a>
+                <a href="signup.html" class="nav-link signup-btn">Post Your Resume</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Career Advice Header -->
+    <section class="companies-header">
+        <div class="container">
+            <h1>Career Advice & Resources</h1>
+            <p>Expert guidance to accelerate your career journey and land your dream job</p>
+            
+            <div class="company-search">
+                <input type="text" placeholder="Search career topics..." class="search-input">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                    Search
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="featured-companies">
+        <div class="container">
+            <h2>Featured Career Articles</h2>
+            <div class="companies-grid">
+                <div class="company-card">
+                    <div class="article-image">
+                        <i class="fas fa-file-alt" style="font-size: 2.5rem; color: var(--accent-color);"></i>
+                    </div>
+                    <div class="article-content">
+                        <h3>How to Write a Winning Resume</h3>
+                        <p class="article-meta">Career Expert • 5 min read</p>
+                        <p>Learn the essential elements of a standout resume that gets past ATS systems and impresses hiring managers.</p>
+                        <div class="article-tags">
+                            <span class="highlight">Resume Tips</span>
+                            <span class="highlight">Job Search</span>
+                        </div>
+                        <button class="follow-btn">Read Article</button>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="article-image">
+                        <i class="fas fa-handshake" style="font-size: 2.5rem; color: var(--secondary-color);"></i>
+                    </div>
+                    <div class="article-content">
+                        <h3>Acing Your First Job Interview</h3>
+                        <p class="article-meta">HR Manager • 7 min read</p>
+                        <p>Master the art of interviewing with insider tips from hiring managers and HR professionals.</p>
+                        <div class="article-tags">
+                            <span class="highlight">Interview Tips</span>
+                            <span class="highlight">First Job</span>
+                        </div>
+                        <button class="follow-btn">Read Article</button>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="article-image">
+                        <i class="fas fa-network-wired" style="font-size: 2.5rem; color: var(--success-color);"></i>
+                    </div>
+                    <div class="article-content">
+                        <h3>Networking for Introverts</h3>
+                        <p class="article-meta">Career Coach • 6 min read</p>
+                        <p>Effective networking strategies for introverted professionals to build meaningful career connections.</p>
+                        <div class="article-tags">
+                            <span class="highlight">Networking</span>
+                            <span class="highlight">Career Growth</span>
+                        </div>
+                        <button class="follow-btn">Read Article</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Categories -->
+    <section class="jobs-results">
+        <div class="container">
+            <h2>Browse by Category</h2>
+            <div class="career-categories">
+                <div class="category-tabs">
+                    <button class="filter-btn active" data-category="all">All Topics</button>
+                    <button class="filter-btn" data-category="job-search">Job Search</button>
+                    <button class="filter-btn" data-category="interviews">Interviews</button>
+                    <button class="filter-btn" data-category="career-growth">Career Growth</button>
+                    <button class="filter-btn" data-category="workplace">Workplace Skills</button>
+                    <button class="filter-btn" data-category="salary">Salary & Benefits</button>
+                </div>
+
+                <div class="articles-grid">
+                    <article class="job-card" data-category="job-search">
+                        <div class="job-header">
+                            <div class="company-logo">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="job-info">
+                                <h3>10 Job Search Mistakes to Avoid</h3>
+                                <p class="company">Career Coach Sarah Johnson</p>
+                                <p class="location"><i class="fas fa-clock"></i> 8 min read • 2 days ago</p>
+                            </div>
+                            <div class="job-type">Popular</div>
+                        </div>
+                        <div class="job-details">
+                            <p>Common pitfalls that sabotage your job search and how to avoid them for better results.</p>
+                            <div class="job-tags">
+                                <span class="tag">Job Search</span>
+                                <span class="tag">Career Tips</span>
+                                <span class="tag">Mistakes</span>
+                            </div>
+                            <div class="job-footer">
+                                <span class="salary">Free Read</span>
+                                <button class="apply-btn">Read Now</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="job-card" data-category="interviews">
+                        <div class="job-header">
+                            <div class="company-logo">
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                            <div class="job-info">
+                                <h3>Virtual Interview Success Guide</h3>
+                                <p class="company">Tech Recruiter Mike Chen</p>
+                                <p class="location"><i class="fas fa-clock"></i> 6 min read • 1 week ago</p>
+                            </div>
+                            <div class="job-type">Trending</div>
+                        </div>
+                        <div class="job-details">
+                            <p>Master remote interviews with technical setup tips, body language advice, and common question prep.</p>
+                            <div class="job-tags">
+                                <span class="tag">Virtual Interviews</span>
+                                <span class="tag">Remote Work</span>
+                                <span class="tag">Technology</span>
+                            </div>
+                            <div class="job-footer">
+                                <span class="salary">Free Read</span>
+                                <button class="apply-btn">Read Now</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="job-card" data-category="salary">
+                        <div class="job-header">
+                            <div class="company-logo">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="job-info">
+                                <h3>Salary Negotiation for New Graduates</h3>
+                                <p class="company">HR Director Lisa Park</p>
+                                <p class="location"><i class="fas fa-clock"></i> 10 min read • 3 days ago</p>
+                            </div>
+                            <div class="job-type">Essential</div>
+                        </div>
+                        <div class="job-details">
+                            <p>Learn how to research, prepare for, and successfully navigate salary negotiations as a recent graduate.</p>
+                            <div class="job-tags">
+                                <span class="tag">Salary</span>
+                                <span class="tag">Negotiation</span>
+                                <span class="tag">New Grad</span>
+                            </div>
+                            <div class="job-footer">
+                                <span class="salary">Free Read</span>
+                                <button class="apply-btn">Read Now</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="job-card" data-category="career-growth">
+                        <div class="job-header">
+                            <div class="company-logo">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="job-info">
+                                <h3>Building Your Personal Brand</h3>
+                                <p class="company">Marketing Expert David Kim</p>
+                                <p class="location"><i class="fas fa-clock"></i> 12 min read • 5 days ago</p>
+                            </div>
+                            <div class="job-type">Premium</div>
+                        </div>
+                        <div class="job-details">
+                            <p>Develop a strong professional brand that sets you apart and accelerates your career growth.</p>
+                            <div class="job-tags">
+                                <span class="tag">Personal Brand</span>
+                                <span class="tag">LinkedIn</span>
+                                <span class="tag">Professional Growth</span>
+                            </div>
+                            <div class="job-footer">
+                                <span class="salary">Premium</span>
+                                <button class="apply-btn">Unlock</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="job-card" data-category="workplace">
+                        <div class="job-header">
+                            <div class="company-logo">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="job-info">
+                                <h3>Essential Soft Skills for Success</h3>
+                                <p class="company">Leadership Coach Amanda Taylor</p>
+                                <p class="location"><i class="fas fa-clock"></i> 9 min read • 1 week ago</p>
+                            </div>
+                            <div class="job-type">Guide</div>
+                        </div>
+                        <div class="job-details">
+                            <p>Develop crucial soft skills that employers value most: communication, teamwork, and emotional intelligence.</p>
+                            <div class="job-tags">
+                                <span class="tag">Soft Skills</span>
+                                <span class="tag">Communication</span>
+                                <span class="tag">Leadership</span>
+                            </div>
+                            <div class="job-footer">
+                                <span class="salary">Free Read</span>
+                                <button class="apply-btn">Read Now</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="job-card" data-category="job-search">
+                        <div class="job-header">
+                            <div class="company-logo">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="job-info">
+                                <h3>Remote Job Search Strategies</h3>
+                                <p class="company">Remote Work Expert Tom Wilson</p>
+                                <p class="location"><i class="fas fa-clock"></i> 11 min read • 4 days ago</p>
+                            </div>
+                            <div class="job-type">Hot</div>
+                        </div>
+                        <div class="job-details">
+                            <p>Find and land remote positions with targeted strategies for the modern distributed workforce.</p>
+                            <div class="job-tags">
+                                <span class="tag">Remote Work</span>
+                                <span class="tag">Job Search</span>
+                                <span class="tag">Digital Nomad</span>
+                            </div>
+                            <div class="job-footer">
+                                <span class="salary">Free Read</span>
+                                <button class="apply-btn">Read Now</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Get Weekly Career Tips</h2>
+            <p>Join over 50,000 professionals receiving actionable career advice in their inbox</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" class="email-input">
+                <button class="subscribe-btn">Subscribe Free</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PathStarter</h3>
+                    <p>The world's leading job site for students and recent graduates.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Job Seekers</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Browse Companies</a></li>
+                        <li><a href="resume-builder.html">Resume Builder</a></li>
+                        <li><a href="career-advice.html">Career Advice</a></li>
+                        <li><a href="post-resume.html">Post Your Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Employers</h4>
+                    <ul>
+                        <li><a href="employer-post-job.html">Post a Job</a></li>
+                        <li><a href="browse-resumes.html">Browse Resumes</a></li>
+                        <li><a href="recruiter-tools.html">Recruiter Tools</a></li>
+                        <li><a href="employer-branding.html">Employer Branding</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PathStarter, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

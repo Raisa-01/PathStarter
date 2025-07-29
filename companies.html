@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Reviews - PathStarter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h2>PathStarter</h2>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="jobs.html" class="nav-link">Find Jobs</a>
+                <a href="companies.html" class="nav-link">Company Reviews</a>
+                <a href="employer-post-job.html" class="nav-link">Post a Job</a>
+                <a href="login.html" class="nav-link login-btn">Sign In</a>
+                <a href="signup.html" class="nav-link signup-btn">Post Your Resume</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Companies Header -->
+    <section class="companies-header">
+        <div class="container">
+            <h1>Company Reviews & Insights</h1>
+            <p>Get the inside scoop on company culture, salaries, and interview processes</p>
+            
+            <div class="company-search">
+                <input type="text" placeholder="Search companies..." class="search-input">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                    Search
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Companies -->
+    <section class="featured-companies">
+        <div class="container">
+            <h2>Top Rated Companies</h2>
+            <div class="companies-grid">
+                <div class="company-card">
+                    <div class="company-header">
+                        <div class="company-logo">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="company-info">
+                            <h3>Google</h3>
+                            <p class="company-industry">Technology • Mountain View, CA</p>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-score">4.4</span>
+                                <span class="review-count">(12,456 reviews)</span>
+                            </div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                    <div class="company-stats">
+                        <div class="stat">
+                            <strong>156,000</strong>
+                            <span>Employees</span>
+                        </div>
+                        <div class="stat">
+                            <strong>$85B</strong>
+                            <span>Revenue</span>
+                        </div>
+                        <div class="stat">
+                            <strong>234</strong>
+                            <span>Open Jobs</span>
+                        </div>
+                    </div>
+                    <div class="company-highlights">
+                        <span class="highlight">Great Benefits</span>
+                        <span class="highlight">Work-Life Balance</span>
+                        <span class="highlight">Career Growth</span>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-header">
+                        <div class="company-logo">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="company-info">
+                            <h3>Microsoft</h3>
+                            <p class="company-industry">Technology • Redmond, WA</p>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-score">4.5</span>
+                                <span class="review-count">(8,923 reviews)</span>
+                            </div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                    <div class="company-stats">
+                        <div class="stat">
+                            <strong>221,000</strong>
+                            <span>Employees</span>
+                        </div>
+                        <div class="stat">
+                            <strong>$198B</strong>
+                            <span>Revenue</span>
+                        </div>
+                        <div class="stat">
+                            <strong>189</strong>
+                            <span>Open Jobs</span>
+                        </div>
+                    </div>
+                    <div class="company-highlights">
+                        <span class="highlight">Inclusive Culture</span>
+                        <span class="highlight">Learning Opportunities</span>
+                        <span class="highlight">Remote Friendly</span>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-header">
+                        <div class="company-logo">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <div class="company-info">
+                            <h3>Apple</h3>
+                            <p class="company-industry">Technology • Cupertino, CA</p>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-score">4.2</span>
+                                <span class="review-count">(7,834 reviews)</span>
+                            </div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                    <div class="company-stats">
+                        <div class="stat">
+                            <strong>154,000</strong>
+                            <span>Employees</span>
+                        </div>
+                        <div class="stat">
+                            <strong>$394B</strong>
+                            <span>Revenue</span>
+                        </div>
+                        <div class="stat">
+                            <strong>167</strong>
+                            <span>Open Jobs</span>
+                        </div>
+                    </div>
+                    <div class="company-highlights">
+                        <span class="highlight">Innovation Focus</span>
+                        <span class="highlight">Premium Benefits</span>
+                        <span class="highlight">Brand Prestige</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Reviews -->
+    <section class="recent-reviews">
+        <div class="container">
+            <h2>Recent Company Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="company-info">
+                            <div class="company-logo-small">
+                                <i class="fab fa-spotify"></i>
+                            </div>
+                            <div>
+                                <h4>Spotify</h4>
+                                <p>Software Engineer • Current Employee</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                    <h5>"Amazing culture and work-life balance"</h5>
+                    <p>Spotify truly cares about its employees. The culture is amazing, management is supportive, and the work-life balance is outstanding. Great place for career growth.</p>
+                    <div class="review-footer">
+                        <span class="helpful">Helpful (23)</span>
+                        <span class="date">2 days ago</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="company-info">
+                            <div class="company-logo-small">
+                                <i class="fab fa-amazon"></i>
+                            </div>
+                            <div>
+                                <h4>Amazon</h4>
+                                <p>Product Manager • Former Employee</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>4.0</span>
+                        </div>
+                    </div>
+                    <h5>"Fast-paced environment with great learning opportunities"</h5>
+                    <p>Working at Amazon taught me so much about scaling systems and working with large teams. The pace is intense but rewarding for those who thrive in such environments.</p>
+                    <div class="review-footer">
+                        <span class="helpful">Helpful (18)</span>
+                        <span class="date">5 days ago</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="company-info">
+                            <div class="company-logo-small">
+                                <i class="fab fa-meta"></i>
+                            </div>
+                            <div>
+                                <h4>Meta</h4>
+                                <p>Data Scientist • Current Employee</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>3.5</span>
+                        </div>
+                    </div>
+                    <h5>"Cutting-edge work but high pressure"</h5>
+                    <p>The technical challenges are fascinating and you work with brilliant people. However, the pressure to deliver can be overwhelming at times. Great compensation though.</p>
+                    <div class="review-footer">
+                        <span class="helpful">Helpful (31)</span>
+                        <span class="date">1 week ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PathStarter</h3>
+                    <p>The world's leading job site for students and recent graduates.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Job Seekers</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Browse Companies</a></li>
+                        <li><a href="resume-builder.html">Resume Builder</a></li>
+                        <li><a href="resources.html">Career Advice</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Employers</h4>
+                    <ul>
+                        <li><a href="employer-post-job.html">Post a Job</a></li>
+                        <li><a href="#">Browse Resumes</a></li>
+                        <li><a href="#">Recruiter Tools</a></li>
+                        <li><a href="#">Employer Branding</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PathStarter, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

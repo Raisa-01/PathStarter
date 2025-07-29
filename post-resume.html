@@ -1,0 +1,395 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Your Resume - PathStarter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h2>PathStarter</h2>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="jobs.html" class="nav-link">Find Jobs</a>
+                <a href="companies.html" class="nav-link">Company Reviews</a>
+                <a href="employer-post-job.html" class="nav-link">Post a Job</a>
+                <a href="login.html" class="nav-link login-btn">Sign In</a>
+                <a href="post-resume.html" class="nav-link signup-btn">Post Your Resume</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Resume Header -->
+    <section class="job-post-header">
+        <div class="container">
+            <h1>Post Your Resume</h1>
+            <p>Get discovered by top employers looking for your skills</p>
+        </div>
+    </section>
+
+    <!-- Resume Form -->
+    <section class="job-post-section">
+        <div class="container">
+            <div class="job-post-container">
+                <div class="job-post-card">
+                    <form class="job-post-form">
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h3>Personal Information</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State/Province *</label>
+                                    <input type="text" id="state" name="state" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="linkedin">LinkedIn Profile URL</label>
+                                <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+                            </div>
+                        </div>
+
+                        <!-- Professional Summary -->
+                        <div class="form-section">
+                            <h3>Professional Summary</h3>
+                            
+                            <div class="form-group">
+                                <label for="jobTitle">Current/Desired Job Title *</label>
+                                <input type="text" id="jobTitle" name="jobTitle" placeholder="e.g., Software Engineer, Marketing Specialist" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="summary">Professional Summary *</label>
+                                <textarea id="summary" name="summary" rows="4" placeholder="Write a brief summary highlighting your key skills, experience, and career objectives..." required></textarea>
+                                <small>2-3 sentences describing your professional background and goals</small>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="experience">Years of Experience</label>
+                                    <select id="experience" name="experience">
+                                        <option value="">Select experience level</option>
+                                        <option value="entry">Entry Level (0-1 years)</option>
+                                        <option value="junior">Junior (1-3 years)</option>
+                                        <option value="mid">Mid-level (3-5 years)</option>
+                                        <option value="senior">Senior (5-10 years)</option>
+                                        <option value="expert">Expert (10+ years)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="industry">Industry *</label>
+                                    <select id="industry" name="industry" required>
+                                        <option value="">Select industry</option>
+                                        <option value="technology">Technology</option>
+                                        <option value="finance">Finance & Banking</option>
+                                        <option value="healthcare">Healthcare</option>
+                                        <option value="marketing">Marketing & Advertising</option>
+                                        <option value="education">Education</option>
+                                        <option value="retail">Retail & E-commerce</option>
+                                        <option value="consulting">Consulting</option>
+                                        <option value="media">Media & Communications</option>
+                                        <option value="nonprofit">Non-profit</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skills -->
+                        <div class="form-section">
+                            <h3>Skills & Expertise</h3>
+                            
+                            <div class="form-group">
+                                <label for="skills">Key Skills *</label>
+                                <textarea id="skills" name="skills" rows="3" placeholder="List your key skills separated by commas (e.g., JavaScript, Project Management, Data Analysis, Adobe Creative Suite)" required></textarea>
+                                <small>Add the skills most relevant to your target job</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="languages">Languages</label>
+                                <input type="text" id="languages" name="languages" placeholder="e.g., English (Native), Spanish (Fluent), French (Conversational)">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="certifications">Certifications</label>
+                                <textarea id="certifications" name="certifications" rows="2" placeholder="List any relevant certifications, licenses, or professional credentials"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="form-section">
+                            <h3>Education</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="degree">Degree *</label>
+                                    <input type="text" id="degree" name="degree" placeholder="e.g., Bachelor of Science in Computer Science" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="school">School/University *</label>
+                                    <input type="text" id="school" name="school" placeholder="e.g., University of California, Berkeley" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="graduationYear">Graduation Year</label>
+                                    <select id="graduationYear" name="graduationYear">
+                                        <option value="">Select year</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="older">Before 2020</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="gpa">GPA (Optional)</label>
+                                    <input type="text" id="gpa" name="gpa" placeholder="e.g., 3.8/4.0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Work Preferences -->
+                        <div class="form-section">
+                            <h3>Work Preferences</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="jobType">Preferred Job Type</label>
+                                    <select id="jobType" name="jobType">
+                                        <option value="">Select job type</option>
+                                        <option value="full-time">Full-time</option>
+                                        <option value="part-time">Part-time</option>
+                                        <option value="contract">Contract</option>
+                                        <option value="internship">Internship</option>
+                                        <option value="freelance">Freelance</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="workLocation">Work Location Preference</label>
+                                    <select id="workLocation" name="workLocation">
+                                        <option value="">Select preference</option>
+                                        <option value="remote">Remote</option>
+                                        <option value="hybrid">Hybrid</option>
+                                        <option value="onsite">On-site</option>
+                                        <option value="flexible">Flexible</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="salaryMin">Minimum Salary Expectation</label>
+                                    <input type="number" id="salaryMin" name="salaryMin" placeholder="50000">
+                                </div>
+                                <div class="form-group">
+                                    <label for="availability">Availability</label>
+                                    <select id="availability" name="availability">
+                                        <option value="">Select availability</option>
+                                        <option value="immediate">Available Immediately</option>
+                                        <option value="2weeks">2 weeks notice</option>
+                                        <option value="1month">1 month notice</option>
+                                        <option value="flexible">Flexible</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Resume Upload -->
+                        <div class="form-section">
+                            <h3>Resume Upload</h3>
+                            
+                            <div class="form-group">
+                                <label for="resume">Upload Resume *</label>
+                                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                                <small>Accepted formats: PDF, DOC, DOCX. Maximum file size: 5MB</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="coverLetter">Upload Cover Letter (Optional)</label>
+                                <input type="file" id="coverLetter" name="coverLetter" accept=".pdf,.doc,.docx">
+                                <small>A well-written cover letter can help you stand out</small>
+                            </div>
+                        </div>
+
+                        <!-- Privacy Settings -->
+                        <div class="form-section">
+                            <h3>Privacy & Visibility Settings</h3>
+                            
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="publicProfile" checked>
+                                    Make my profile visible to employers
+                                </label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="jobAlerts">
+                                    Receive job alerts matching my profile
+                                </label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="currentEmployer">
+                                    Hide my profile from my current employer (if employed)
+                                </label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="terms" required>
+                                    I agree to the <a href="terms-of-service.html">Terms of Service</a> and <a href="privacy-policy.html">Privacy Policy</a> *
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn-secondary">Save as Draft</button>
+                            <button type="submit" class="btn-primary">Post My Resume</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="job-post-sidebar">
+                    <div class="tips-card">
+                        <h4>Resume Tips</h4>
+                        <ul>
+                            <li>Use a professional email address</li>
+                            <li>Include quantifiable achievements</li>
+                            <li>Tailor your skills to your target role</li>
+                            <li>Keep your summary concise and impactful</li>
+                            <li>Update your profile regularly</li>
+                            <li>Use keywords from job descriptions</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h4>Profile Visibility</h4>
+                        <div class="plan">
+                            <h5>Free Profile</h5>
+                            <div class="price">$0<span>/month</span></div>
+                            <ul>
+                                <li>Basic profile visibility</li>
+                                <li>Apply to unlimited jobs</li>
+                                <li>Basic job alerts</li>
+                            </ul>
+                        </div>
+                        <div class="plan featured">
+                            <h5>Premium Profile</h5>
+                            <div class="price">$9.99<span>/month</span></div>
+                            <ul>
+                                <li>Enhanced profile visibility</li>
+                                <li>Priority in search results</li>
+                                <li>Advanced job alerts</li>
+                                <li>Application tracking</li>
+                                <li>Profile analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PathStarter</h3>
+                    <p>The world's leading job site for students and recent graduates.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Job Seekers</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Browse Companies</a></li>
+                        <li><a href="resume-builder.html">Resume Builder</a></li>
+                        <li><a href="career-advice.html">Career Advice</a></li>
+                        <li><a href="post-resume.html">Post Your Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Employers</h4>
+                    <ul>
+                        <li><a href="employer-post-job.html">Post a Job</a></li>
+                        <li><a href="browse-resumes.html">Browse Resumes</a></li>
+                        <li><a href="recruiter-tools.html">Recruiter Tools</a></li>
+                        <li><a href="employer-branding.html">Employer Branding</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PathStarter, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

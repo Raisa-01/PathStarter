@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Resumes - PathStarter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h2>PathStarter</h2>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="jobs.html" class="nav-link">Find Jobs</a>
+                <a href="companies.html" class="nav-link">Company Reviews</a>
+                <a href="employer-post-job.html" class="nav-link">Post a Job</a>
+                <a href="login.html" class="nav-link login-btn">Sign In</a>
+                <a href="signup.html" class="nav-link signup-btn">Post Your Resume</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Browse Resumes Header -->
+    <section class="jobs-header">
+        <div class="container">
+            <h1>Browse Qualified Candidates</h1>
+            <p>Find talented professionals ready to join your team</p>
+            
+            <div class="search-filters">
+                <div class="search-container">
+                    <input type="text" placeholder="Skills, job titles, or keywords" class="search-input">
+                    <input type="text" placeholder="Location or remote" class="location-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                        Search Candidates
+                    </button>
+                </div>
+                <div class="advanced-filters">
+                    <select class="filter-select">
+                        <option>Experience Level</option>
+                        <option>Entry Level</option>
+                        <option>Mid-Level</option>
+                        <option>Senior Level</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>Industry</option>
+                        <option>Technology</option>
+                        <option>Finance</option>
+                        <option>Healthcare</option>
+                        <option>Marketing</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>Education</option>
+                        <option>High School</option>
+                        <option>Bachelor's</option>
+                        <option>Master's</option>
+                        <option>PhD</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>Availability</option>
+                        <option>Immediate</option>
+                        <option>2 Weeks</option>
+                        <option>1 Month</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Results -->
+    <section class="jobs-results">
+        <div class="container">
+            <div class="results-header">
+                <h2>1,847 qualified candidates found</h2>
+                <div class="sort-options">
+                    <label>Sort by:</label>
+                    <select class="sort-select">
+                        <option>Relevance</option>
+                        <option>Most Recent</option>
+                        <option>Experience Level</option>
+                        <option>Salary Expectations</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="jobs-content">
+                <aside class="filters-sidebar">
+                    <h3>Refine Results</h3>
+                    
+                    <div class="filter-group">
+                        <h4>Experience Level</h4>
+                        <label><input type="checkbox"> Entry Level (0-2 years)</label>
+                        <label><input type="checkbox"> Mid-Level (3-5 years)</label>
+                        <label><input type="checkbox"> Senior (5+ years)</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Work Authorization</h4>
+                        <label><input type="checkbox"> US Citizen</label>
+                        <label><input type="checkbox"> Permanent Resident</label>
+                        <label><input type="checkbox"> Work Visa Required</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Salary Range</h4>
+                        <label><input type="checkbox"> $40k - $60k</label>
+                        <label><input type="checkbox"> $60k - $80k</label>
+                        <label><input type="checkbox"> $80k - $100k</label>
+                        <label><input type="checkbox"> $100k+</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Work Preference</h4>
+                        <label><input type="checkbox"> Remote</label>
+                        <label><input type="checkbox"> Hybrid</label>
+                        <label><input type="checkbox"> On-site</label>
+                    </div>
+                </aside>
+
+                <main class="jobs-list">
+                    <div class="job-card-large candidate-card">
+                        <div class="job-header">
+                            <div class="candidate-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="job-info">
+                                <h3>Sarah Johnson</h3>
+                                <p class="company">Software Engineer • 3 years experience</p>
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA • Open to Remote</p>
+                                <p class="posted-time">Last active: 2 days ago</p>
+                            </div>
+                            <div class="job-actions">
+                                <button class="save-btn" title="Save candidate">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                                <button class="apply-btn">Contact</button>
+                            </div>
+                        </div>
+                        <div class="job-details">
+                            <p>Experienced full-stack developer with expertise in React, Node.js, and Python. Passionate about building scalable web applications and working in agile environments.</p>
+                            <div class="job-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">AWS</span>
+                                <span class="tag">Agile</span>
+                            </div>
+                            <div class="candidate-details">
+                                <span class="detail-item"><strong>Education:</strong> BS Computer Science, UC Berkeley</span>
+                                <span class="detail-item"><strong>Availability:</strong> 2 weeks notice</span>
+                                <span class="detail-item"><strong>Salary:</strong> $85k - $100k</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="job-card-large candidate-card">
+                        <div class="job-header">
+                            <div class="candidate-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="job-info">
+                                <h3>Michael Chen</h3>
+                                <p class="company">Digital Marketing Specialist • 2 years experience</p>
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> New York, NY • Hybrid</p>
+                                <p class="posted-time">Last active: 1 day ago</p>
+                            </div>
+                            <div class="job-actions">
+                                <button class="save-btn" title="Save candidate">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                                <button class="apply-btn">Contact</button>
+                            </div>
+                        </div>
+                        <div class="job-details">
+                            <p>Results-driven marketing professional with proven track record in social media campaigns, content creation, and analytics. Increased brand engagement by 150% at previous role.</p>
+                            <div class="job-tags">
+                                <span class="tag">Social Media</span>
+                                <span class="tag">Google Ads</span>
+                                <span class="tag">Content Marketing</span>
+                                <span class="tag">Analytics</span>
+                                <span class="tag">SEO</span>
+                            </div>
+                            <div class="candidate-details">
+                                <span class="detail-item"><strong>Education:</strong> BA Marketing, NYU</span>
+                                <span class="detail-item"><strong>Availability:</strong> Immediate</span>
+                                <span class="detail-item"><strong>Salary:</strong> $60k - $75k</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="job-card-large candidate-card">
+                        <div class="job-header">
+                            <div class="candidate-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="job-info">
+                                <h3>Emily Rodriguez</h3>
+                                <p class="company">UX Designer • 4 years experience</p>
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Austin, TX • Remote</p>
+                                <p class="posted-time">Last active: 3 hours ago</p>
+                            </div>
+                            <div class="job-actions">
+                                <button class="save-btn" title="Save candidate">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                                <button class="apply-btn">Contact</button>
+                            </div>
+                        </div>
+                        <div class="job-details">
+                            <p>Creative UX designer specializing in user research, wireframing, and prototyping. Led design for mobile apps with 1M+ downloads and improved user satisfaction by 40%.</p>
+                            <div class="job-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">User Research</span>
+                                <span class="tag">Prototyping</span>
+                                <span class="tag">Design Systems</span>
+                                <span class="tag">Mobile Design</span>
+                            </div>
+                            <div class="candidate-details">
+                                <span class="detail-item"><strong>Education:</strong> BFA Design, Art Institute</span>
+                                <span class="detail-item"><strong>Availability:</strong> 1 month notice</span>
+                                <span class="detail-item"><strong>Salary:</strong> $90k - $110k</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination">
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">4</button>
+                        <span>...</span>
+                        <button class="page-btn">42</button>
+                        <button class="page-btn next-btn">Next <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PathStarter</h3>
+                    <p>The world's leading job site for students and recent graduates.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Job Seekers</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Browse Companies</a></li>
+                        <li><a href="resume-builder.html">Resume Builder</a></li>
+                        <li><a href="career-advice.html">Career Advice</a></li>
+                        <li><a href="post-resume.html">Post Your Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Employers</h4>
+                    <ul>
+                        <li><a href="employer-post-job.html">Post a Job</a></li>
+                        <li><a href="browse-resumes.html">Browse Resumes</a></li>
+                        <li><a href="recruiter-tools.html">Recruiter Tools</a></li>
+                        <li><a href="employer-branding.html">Employer Branding</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PathStarter, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
