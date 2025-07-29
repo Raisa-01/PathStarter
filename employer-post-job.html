@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html lang="en">
@@ -335,3 +336,342 @@
     <script src="script.js"></script>
 </body>
 </html>
+=======
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job - PathStarter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h2>PathStarter</h2>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="jobs.html" class="nav-link">Find Jobs</a>
+                <a href="companies.html" class="nav-link">Company Reviews</a>
+                <a href="employer-post-job.html" class="nav-link">Post a Job</a>
+                <a href="login.html" class="nav-link login-btn">Sign In</a>
+                <a href="signup.html" class="nav-link signup-btn">Post Your Resume</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Job Posting Header -->
+    <section class="job-post-header">
+        <div class="container">
+            <h1>Post a Job Opening</h1>
+            <p>Find the perfect candidate for your team</p>
+        </div>
+    </section>
+
+    <!-- Job Posting Form -->
+    <section class="job-post-section">
+        <div class="container">
+            <div class="job-post-container">
+                <div class="job-post-card">
+                    <form class="job-post-form">
+                        <div class="form-section">
+                            <h3>Job Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="job-title">Job Title *</label>
+                                    <input type="text" id="job-title" placeholder="e.g. Software Developer Intern" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="job-type">Job Type *</label>
+                                    <select id="job-type" required>
+                                        <option value="">Select Job Type</option>
+                                        <option value="full-time">Full-time</option>
+                                        <option value="part-time">Part-time</option>
+                                        <option value="internship">Internship</option>
+                                        <option value="contract">Contract</option>
+                                        <option value="freelance">Freelance</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="department">Department</label>
+                                    <select id="department">
+                                        <option value="">Select Department</option>
+                                        <option value="engineering">Engineering</option>
+                                        <option value="marketing">Marketing</option>
+                                        <option value="design">Design</option>
+                                        <option value="sales">Sales</option>
+                                        <option value="hr">Human Resources</option>
+                                        <option value="finance">Finance</option>
+                                        <option value="operations">Operations</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="experience-level">Experience Level *</label>
+                                    <select id="experience-level" required>
+                                        <option value="">Select Experience Level</option>
+                                        <option value="entry">Entry Level</option>
+                                        <option value="mid">Mid Level</option>
+                                        <option value="senior">Senior Level</option>
+                                        <option value="executive">Executive</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="job-description">Job Description *</label>
+                                <textarea id="job-description" rows="6" placeholder="Describe the role, responsibilities, and what makes this opportunity exciting..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="requirements">Requirements *</label>
+                                <textarea id="requirements" rows="4" placeholder="List the skills, qualifications, and experience required for this role..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="benefits">Benefits & Perks</label>
+                                <textarea id="benefits" rows="3" placeholder="Health insurance, flexible hours, remote work, professional development..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Location & Remote Work</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="work-location">Work Location *</label>
+                                    <select id="work-location" required>
+                                        <option value="">Select Work Location</option>
+                                        <option value="remote">Fully Remote</option>
+                                        <option value="hybrid">Hybrid</option>
+                                        <option value="onsite">On-site</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" placeholder="e.g. San Francisco, CA">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timezone">Time Zone (for remote positions)</label>
+                                <select id="timezone">
+                                    <option value="">Select Time Zone</option>
+                                    <option value="pst">Pacific Time (PST/PDT)</option>
+                                    <option value="mst">Mountain Time (MST/MDT)</option>
+                                    <option value="cst">Central Time (CST/CDT)</option>
+                                    <option value="est">Eastern Time (EST/EDT)</option>
+                                    <option value="utc">UTC</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Compensation</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="salary-type">Salary Type *</label>
+                                    <select id="salary-type" required>
+                                        <option value="">Select Salary Type</option>
+                                        <option value="hourly">Hourly</option>
+                                        <option value="salary">Annual Salary</option>
+                                        <option value="stipend">Stipend</option>
+                                        <option value="unpaid">Unpaid</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="currency">Currency</label>
+                                    <select id="currency">
+                                        <option value="usd">USD ($)</option>
+                                        <option value="eur">EUR (€)</option>
+                                        <option value="gbp">GBP (£)</option>
+                                        <option value="cad">CAD (C$)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="salary-min">Minimum Compensation</label>
+                                    <input type="number" id="salary-min" placeholder="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="salary-max">Maximum Compensation</label>
+                                    <input type="number" id="salary-max" placeholder="0">
+                                </div>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="show-salary">
+                                    Display salary range on job posting
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Skills & Technologies</h3>
+                            <div class="form-group">
+                                <label for="required-skills">Required Skills</label>
+                                <input type="text" id="required-skills" placeholder="e.g. JavaScript, React, Node.js (separate with commas)">
+                                <small>Enter skills separated by commas</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preferred-skills">Preferred Skills</label>
+                                <input type="text" id="preferred-skills" placeholder="e.g. TypeScript, GraphQL, AWS (separate with commas)">
+                                <small>Enter skills separated by commas</small>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Application Details</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="application-deadline">Application Deadline</label>
+                                    <input type="date" id="application-deadline">
+                                </div>
+                                <div class="form-group">
+                                    <label for="start-date">Expected Start Date</label>
+                                    <input type="date" id="start-date">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="application-instructions">Application Instructions</label>
+                                <textarea id="application-instructions" rows="3" placeholder="Any specific instructions for applicants..."></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="easy-apply">
+                                    Enable Easy Apply (candidates can apply with one click using their PathStarter profile)
+                                </label>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="email-notifications">
+                                    Send me email notifications when candidates apply
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn-secondary">Save as Draft</button>
+                            <button type="submit" class="btn-primary">Post Job</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="job-post-sidebar">
+                    <div class="pricing-card">
+                        <h4>Job Posting Plans</h4>
+                        <div class="plan">
+                            <h5>Standard Post</h5>
+                            <div class="price">$299</div>
+                            <ul>
+                                <li>30-day listing</li>
+                                <li>Unlimited applications</li>
+                                <li>Basic candidate filtering</li>
+                                <li>Email support</li>
+                            </ul>
+                        </div>
+                        <div class="plan featured">
+                            <h5>Featured Post</h5>
+                            <div class="price">$499</div>
+                            <ul>
+                                <li>45-day listing</li>
+                                <li>Featured placement</li>
+                                <li>Advanced candidate filtering</li>
+                                <li>Priority support</li>
+                                <li>Analytics dashboard</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tips-card">
+                        <h4>Tips for Better Job Posts</h4>
+                        <ul>
+                            <li>Use clear, specific job titles</li>
+                            <li>Highlight remote work opportunities</li>
+                            <li>Include salary ranges when possible</li>
+                            <li>Mention growth opportunities</li>
+                            <li>Be specific about required skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PathStarter</h3>
+                    <p>The world's leading job site for students and recent graduates.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Job Seekers</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Browse Companies</a></li>
+                        <li><a href="resume-builder.html">Resume Builder</a></li>
+                        <li><a href="resources.html">Career Advice</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Employers</h4>
+                    <ul>
+                        <li><a href="employer-post-job.html">Post a Job</a></li>
+                        <li><a href="#">Browse Resumes</a></li>
+                        <li><a href="#">Recruiter Tools</a></li>
+                        <li><a href="#">Employer Branding</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PathStarter, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 9f45155041110f244f3cb587882116ab7dadea6c
