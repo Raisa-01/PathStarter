@@ -119,7 +119,7 @@ body {
     color: white;
 }
 
-.signup-btn {
+.p-btn {
     padding: 8px 20px;
     background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
     color: white;
@@ -127,7 +127,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.signup-btn:hover {
+.p-btn:hover {
     transform: translateY(-1px);
     box-shadow: 0 4px 20px rgba(0, 102, 255, 0.3);
 }
